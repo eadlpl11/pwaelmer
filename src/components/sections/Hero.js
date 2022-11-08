@@ -4,7 +4,7 @@ import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
+
 
 const propTypes = {
   ...SectionProps.types
@@ -25,6 +25,7 @@ const Hero = ({
   ...props
 }) => {
 
+  /*
   const [videoModalActive, setVideomodalactive] = useState(false);
 
   const openModal = (e) => {
@@ -36,7 +37,7 @@ const Hero = ({
     e.preventDefault();
     setVideomodalactive(false);
   }   
-
+  */
   const outerClasses = classNames(
     'hero section center-content',
     topOuterDivider && 'has-top-divider',
@@ -92,3 +93,4 @@ Hero.propTypes = propTypes;
 Hero.defaultProps = defaultProps;
 
 export default Hero;
+
